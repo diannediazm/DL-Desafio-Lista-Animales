@@ -74,7 +74,7 @@ let instancias = (event) => {
     let nombreMascota = document.getElementById('nombreMascota').value;
     let tipo = document.getElementById('tipo').value;
     let enfermedad = document.getElementById('enfermedad').value;
-    let mascota = new Perro(propietario,telefono,direccion,nombreMascota,tipo,enfermedad);
+    let mascota = new Perro(propietario,direccion,telefono,nombreMascota,tipo,enfermedad);
     
     document.getElementById('resultado').innerHTML = "Los datos del propietario son: " + mascota.datosPropietario() + ".<p> Los datos de la mascota son: <p>" + mascota.datosAnimal() + " y su enfermedad es: " + enfermedad;
 }
