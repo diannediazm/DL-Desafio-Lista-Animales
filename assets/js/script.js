@@ -79,3 +79,44 @@ let instancias = (event) => {
     document.getElementById('resultado').innerHTML = "Los datos del propietario son: " + mascota.datosPropietario() + ".<p> Los datos de la mascota son: <p>" + mascota.datosAnimal() + " y su enfermedad es: " + enfermedad;
 }
 formulario.addEventListener('submit', instancias);
+
+// Intento de switch que no funciona :c
+/*
+var selectTipoMascota = () => {
+    var tipoSelect = document.getElementById("tipo");
+    var options = document.getElementsByTagName("option");
+    return options[tipoSelect.value - 1].textContent;
+};
+
+let propietario = document.getElementById('propietario').value;
+let direccion = document.getElementById('direccion').value;
+let telefono = document.getElementById('telefono').value;
+let nombreMascota = document.getElementById('nombreMascota').value;
+let enfermedad = document.getElementById('enfermedad').value;
+let select = document.getElementById('tipo').value;
+let resultado = document.getElementById('resultado');
+
+let formulario = document.querySelector('form');
+formulario.addEventListener('submit', datosAgregados);
+
+function datosAgregados (event) {
+    event.preventDefault();
+    
+    switch (select) {
+        case "1":
+            let perro = new Perro(propietario,direccion,telefono,nombreMascota,selectTipoMascota(),enfermedad);
+            resultado.innerHTML = "Los datos del propietario son: " + perro.datosPropietario() + ".<p> Los datos de la mascota son: <p>" + perro.datosAnimal() + " y su enfermedad es: " + perro._enfermedad;
+            break;
+
+        case "2":
+            let gato = new Gato(propietario,direccion,telefono,nombreMascota,selectTipoMascota(),enfermedad); 
+            resultado.innerHTML = "Los datos del propietario son: " + gato.datosPropietario() + ".<p> Los datos de la mascota son: <p>" + gato.datosAnimal() + " y su enfermedad es: " + gato._enfermedad;
+            break;
+
+        case "3":
+            let conejo = new Conejo(propietario,direccion,telefono,nombreMascota,selectTipoMascota(),enfermedad); 
+            resultado.innerHTML = "Los datos del propietario son: " + conejo.datosPropietario() + ".<p> Los datos de la mascota son: <p>" + conejo.datosAnimal() + " y su enfermedad es: " + conejo._enfermedad;
+            break;
+    }
+    
+}*/
