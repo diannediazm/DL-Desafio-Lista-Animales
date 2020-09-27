@@ -65,23 +65,6 @@ class Conejo extends Animal {
 
 }
 
-/*let formulario = document.querySelector('form');
-let instancias = (event) => {
-    event.preventDefault();
-    let propietario = document.getElementById('propietario').value;
-    let direccion = document.getElementById('direccion').value;
-    let telefono = document.getElementById('telefono').value;
-    let nombreMascota = document.getElementById('nombreMascota').value;
-    let tipo = document.getElementById('tipo').value;
-    let enfermedad = document.getElementById('enfermedad').value;
-    let mascota = new Perro(propietario,direccion,telefono,nombreMascota,tipo,enfermedad);
-    
-    document.getElementById('resultado').innerHTML = "Los datos del propietario son: " + mascota.datosPropietario() + ".<p> Los datos de la mascota son: <p>" + mascota.datosAnimal() + " y su enfermedad es: " + enfermedad;
-}
-formulario.addEventListener('submit', instancias);*/
-
-// Intento de switch que no funciona :c
-
 var TipoMascota = () => {
     var tipoSelect = document.getElementById("tipo");
     var options = document.getElementsByTagName("option");
