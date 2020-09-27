@@ -65,7 +65,7 @@ class Conejo extends Animal {
 
 }
 
-let formulario = document.querySelector('form');
+/*let formulario = document.querySelector('form');
 let instancias = (event) => {
     event.preventDefault();
     let propietario = document.getElementById('propietario').value;
@@ -78,29 +78,29 @@ let instancias = (event) => {
     
     document.getElementById('resultado').innerHTML = "Los datos del propietario son: " + mascota.datosPropietario() + ".<p> Los datos de la mascota son: <p>" + mascota.datosAnimal() + " y su enfermedad es: " + enfermedad;
 }
-formulario.addEventListener('submit', instancias);
+formulario.addEventListener('submit', instancias);*/
 
 // Intento de switch que no funciona :c
-/*
+
 var selectTipoMascota = () => {
     var tipoSelect = document.getElementById("tipo");
     var options = document.getElementsByTagName("option");
     return options[tipoSelect.value - 1].textContent;
 };
 
-let propietario = document.getElementById('propietario').value;
-let direccion = document.getElementById('direccion').value;
-let telefono = document.getElementById('telefono').value;
-let nombreMascota = document.getElementById('nombreMascota').value;
-let enfermedad = document.getElementById('enfermedad').value;
-let select = document.getElementById('tipo').value;
-let resultado = document.getElementById('resultado');
-
 let formulario = document.querySelector('form');
 formulario.addEventListener('submit', datosAgregados);
 
 function datosAgregados (event) {
+    console.log("funciona");
     event.preventDefault();
+    let propietario = document.getElementById('propietario').value;
+    let direccion = document.getElementById('direccion').value;
+    let telefono = document.getElementById('telefono').value;
+    let nombreMascota = document.getElementById('nombreMascota').value;
+    let enfermedad = document.getElementById('enfermedad').value;
+    let select = document.getElementById('tipo').value;
+    let resultado = document.getElementById('resultado');
     
     switch (select) {
         case "1":
@@ -119,4 +119,4 @@ function datosAgregados (event) {
             break;
     }
     
-}*/
+}
